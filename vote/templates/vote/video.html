@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<html>
+	<head>
+		<title>대학생이 뽑은 좋은 광고</title>
+		<meta charset="utf-8">
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<!-- <script type="text/javascript" src="../../../js/jquery.js"></script> -->
+		<style>
+			.wrapper {
+				width: 100%;
+				height: auto;
+			}
+
+			.button {
+				text-align: center;
+			}
+
+			.candidates {
+				text-align: center;
+				background-color: #ffffff;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				margin-left: 50px;
+				margin-right: 50px;
+				border: 1px black;
+			}
+
+			.video {
+				padding-left: auto;
+				padding-right: auto;
+			}
+		</style>
+
+	</head>
+
+	<body style="background-color: #ffbf00;">
+	<img class="wrapper" src='http://blogfiles.naver.net/MjAxNzA4MTBfODgg/MDAxNTAyMzUzMjU5MjA0.oqcmpAtGO8okVChe6N2DUTCA5wXvQA7zKvZFiq_URbQg.z6p5vOMrNZEJtVsoeVBzva_h-h7Wisz9LTvuoSvGHFEg.PNG.kijehyum/indexlogo.png'>
+	<h1> {{ title }}</h1>
+		<table>
+			<img class="wrapper" src="http://blogfiles.naver.net/MjAxNzA4MTBfMSAg/MDAxNTAyMzY0NjMxMzM4.eA5j-Vryk6diqnu_bLAJXmnmz32rEP1EcGp4kJ5XP0sg.dr2y8NQzqCQarHNrDdGKnA9rhY2F2MwgjjY2mc_TsQ0g.PNG.kijehyum/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-1.png">
+			<form action="/video/" method="POST">
+			{% csrf_token %}
+			{% for ad in vid_candidates %}
+			<div class="candidates">
+				<head>{{ad.name}}</head>
+			<iframe class="video"
+				src="{{ ad.video_url }}">
+			</iframe>
+				<input type="checkbox" name="vid_id" value="{{ ad.id }}">선택하기</input>
+			</div>
+			{% endfor %}
+<!-- 
+			<form action="/" method="POST">
+			{% csrf_token %}
+				<select>
+					{% for ad in vid_candidates %}
+					<option value="{{ ad.id }}">{{ ad.name }}
+					{% endfor %}
+				</select>
+
+				<select>
+					{% for ad in vid_candidates %}
+					<option value="{{ ad.id }}">{{ ad.name }}
+					{% endfor %}
+				</select>
+
+				<select>
+					{% for ad in vid_candidates %}
+					<option value="{{ ad.id }}">{{ ad.name }}
+					{% endfor %}
+				</select> -->
+				<div class="button">
+				<input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="투표하기">
+				</div>
+			</form>
+
+<!-- 			<h1>옥외 광고</h1>
+			{% for ad in out_candidates %}
+				<div>
+					<head>{{ad.name}}</head>
+				</div>
+			{% endfor %}
+
+			<h1>브랜디드 엔터테인먼트</h1>
+			{% for ad in ent_candidates %}
+				<div>
+					<head>{{ad.name}}</head>
+				</div>
+			{% endfor %} -->
+		</table>
+	</body>
+</html>
