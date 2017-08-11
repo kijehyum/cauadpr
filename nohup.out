@@ -176,3 +176,25 @@ Starting development server at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.
 [10/Aug/2017 13:36:14] "GET /video/ HTTP/1.1" 200 6086
 [10/Aug/2017 13:39:23] "GET /static/indexlogo.png HTTP/1.1" 304 0
+Traceback (most recent call last):
+  File "manage.py", line 17, in <module>
+    "Couldn't import Django. Are you sure it's installed and "
+ImportError: Couldn't import Django. Are you sure it's installed and available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?
+[11/Aug/2017 07:35:47] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 07:35:47] "GET /static/indexlogo.png HTTP/1.1" 304 0
+[11/Aug/2017 07:35:51] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 07:35:53] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 07:35:54] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 07:35:54] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 07:35:54] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 07:36:17] "GET /video/ HTTP/1.1" 200 6086
+[11/Aug/2017 07:37:53] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 07:39:36] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 09:41:34] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 09:41:41] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 09:41:48] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 09:41:50] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 09:41:51] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 09:41:53] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 09:41:54] "GET / HTTP/1.1" 200 855
+[11/Aug/2017 09:41:56] "GET /video/ HTTP/1.1" 200 6086
