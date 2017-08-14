@@ -50,7 +50,7 @@
 >>>>>>> 0056478be4521952996e7c7d3e5f293f9ca7e9ec
 	<h1> {{ title }}</h1>
 		<table>
-			<img class="wrapper" src="{% static 'video.png %}">
+			<img class="wrapper" src="{% static 'video.png' %}">
 			<form action="/video/" method="POST">
 			{% csrf_token %}
 			{% for ad in vid_candidates %}
