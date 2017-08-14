@@ -38,18 +38,34 @@
 	<img class="wrapper" src="{% static 'indexlogo.png' %}">
 	<h1> {{ title }}</h1>
 		<table>
-			<img class="wrapper" src="http://blogfiles.naver.net/MjAxNzA4MTBfMSAg/MDAxNTAyMzY0NjMxMzM4.eA5j-Vryk6diqnu_bLAJXmnmz32rEP1EcGp4kJ5XP0sg.dr2y8NQzqCQarHNrDdGKnA9rhY2F2MwgjjY2mc_TsQ0g.PNG.kijehyum/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-1.png">
+			<img class="wrapper" src="{% static 'outdoor.png %}">
 			<form action="/outdoor/" method="POST">
 			{% csrf_token %}
-			{% for ad in out_candidates %}
 			<div class="candidates">
-				<head>{{ad.name}}</head>
-<!-- 			<iframe
-				src="{{ ad.img_url }}">
-			</iframe> -->
-				<input type="radio" name="out_id" value="{{ ad.id }}">선택하기</input>
+				<img src="{% static 'out_one.png' %}">
+				<input type="radio" name="out_id" value="1">선택하기</input>
 			</div>
-			{% endfor %}
+			
+			<div class="candidates">
+				<img src="{% static 'out_two.png' %}">
+				<input type="radio" name="out_id" value="2">선택하기</input>
+			</div>
+		
+			<div class="candidates">
+				<img src="{% static 'out_three.png' %}">
+				<input type="radio" name="out_id" value="3">선택하기</input>
+			</div>
+	
+			<div class="candidates">
+				<img src="{% static 'out_four.png' %}">
+				<input type="radio" name="out_id" value="4">선택하기</input>
+			</div>
+	
+			<div class="candidates">
+				<img src="{% static 'out_five.png' %}">
+				<input type="radio" name="out_id" value="5">선택하기</input>
+			</div>
+
 			<div class="button">
 				<input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="투표하기">
 			</div>
