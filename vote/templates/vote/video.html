@@ -43,7 +43,7 @@
 	<img class="wrapper" src= "{% static 'indexlogo.png' %}">
 	<h1> {{ title }}</h1>
 		<table>
-			<img class="wrapper" src="{% static 'video.png %}">
+			<img class="wrapper" src="{% static 'video.png' %}">
 			<form action="/video/" method="POST">
 			{% csrf_token %}
 			{% for ad in vid_candidates %}
