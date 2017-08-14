@@ -1,4 +1,8 @@
 {% load static %}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0056478be4521952996e7c7d3e5f293f9ca7e9ec
 <!DOCTYPE html>
 <html lang='en'>
 
@@ -39,10 +43,14 @@
 	</head>
 
 	<body style="background-color: #ffbf00;">
+<<<<<<< HEAD
 	<img class="wrapper" src={% static 'indexlogo.png' %}>
+=======
+	<img class="wrapper" src= "{% static 'indexlogo.png' %}">
+>>>>>>> 0056478be4521952996e7c7d3e5f293f9ca7e9ec
 	<h1> {{ title }}</h1>
 		<table>
-			<img class="wrapper" src="http://blogfiles.naver.net/MjAxNzA4MTBfMSAg/MDAxNTAyMzY0NjMxMzM4.eA5j-Vryk6diqnu_bLAJXmnmz32rEP1EcGp4kJ5XP0sg.dr2y8NQzqCQarHNrDdGKnA9rhY2F2MwgjjY2mc_TsQ0g.PNG.kijehyum/%EC%A0%9C%EB%AA%A9_%EC%97%86%EC%9D%8C-1.png">
+			<img class="wrapper" src="{% static 'video.png %}">
 			<form action="/video/" method="POST">
 			{% csrf_token %}
 			{% for ad in vid_candidates %}
