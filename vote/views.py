@@ -15,19 +15,20 @@ def video(request):
 	ent_candidates = Ad_ent.objects.all()
 
 	if request.POST:
-		vid_id = request.POST.get('vid_id')
+		vid_id = request.POST.getlist('vid_id')
 		# out_id = request.POST.get('out_id')
 		# ent_id = request.POST.get('ent_id')
 
-		vid = Ad_video.objects.get(id=vid_id)
-		# out = Ad_outdoor.objects.get(id=out_id)
-		# ent = Ad_ent.objects.get(id=ent_id)
-		vid.result += 1
-		vid.save()
-		# out.result += 1
-		# out.save()
-		# ent.result += 1
-		# ent.save()
+		for vid_id in vid_id:
+			vid = Ad_video.objects.get(id=vid_id)
+			# out = Ad_outdoor.objects.get(id=out_id)
+			# ent = Ad_ent.objects.get(id=ent_id)
+			vid.result += 1
+			vid.save()
+			# out.result += 1
+			# out.save()
+			# ent.result += 1
+			# ent.save()
 		return HttpResponseRedirect('/outdoor')
 
 	context_dict = {
