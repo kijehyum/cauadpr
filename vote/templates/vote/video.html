@@ -6,11 +6,15 @@
 <html>
 	<head>
 		<title>대학생이 뽑은 좋은 광고</title>
-		<meta charset="utf-8">
-		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
-		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-		<!-- <script type="text/javascript" src="../../../js/jquery.js"></script> -->
+		<meta charset="utf-8">  
+		<script 
+		 src = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js">
+		</script>
+		<link rel = "stylesheet" 
+		 href = "https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+		<link rel = "stylesheet" 
+		 href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<style>
 			.wrapper {
 				width: 100%;
@@ -34,65 +38,42 @@
 			.video {
 				padding-left: auto;
 				padding-right: auto;
+				width: 500px;
+				height: auto;
 			}
 		</style>
-
 	</head>
 
 	<body style="background-color: #ffbf00;">
-	<img class="wrapper" src= "{% static 'indexlogo.png' %}">
 	<h1> {{ title }}</h1>
-		<table>
-			<img class="wrapper" src="{% static 'video.png' %}">
-			<form action="/video/" method="POST">
+		<form action="/video/" method="POST">
 			{% csrf_token %}
 			{% for ad in vid_candidates %}
 			<div class="candidates">
-				<head>{{ad.name}}</head>
-			<iframe class="video"
-				src="{{ ad.video_url }}">
-			</iframe>
-				<input type="checkbox" name="vid_id" value="{{ ad.id }}">선택하기</input>
+				<div class="head">
+					<head>{{ad.name}}</head>
+				</div>
+				<div class="youtube">
+					<iframe class="video" allowfullscreen="true"
+						src="{{ ad.video_url }}">
+					</iframe>
+				</div>
+				<div class="switch">
+					<label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-{{ ad.id }}">
+						<input id="switch-{{ ad.id }}" class="mdl-switch__input" type="checkbox" name="vid_id" value="{{ ad.id }}" width="100px">선택하기</input>
+					</label>
+				</div>
 			</div>
 			{% endfor %}
-<!-- 
-			<form action="/" method="POST">
-			{% csrf_token %}
-				<select>
-					{% for ad in vid_candidates %}
-					<option value="{{ ad.id }}">{{ ad.name }}
-					{% endfor %}
-				</select>
-
-				<select>
-					{% for ad in vid_candidates %}
-					<option value="{{ ad.id }}">{{ ad.name }}
-					{% endfor %}
-				</select>
-
-				<select>
-					{% for ad in vid_candidates %}
-					<option value="{{ ad.id }}">{{ ad.name }}
-					{% endfor %}
-				</select> -->
-				<div class="button">
+			<div class="button">
 				<input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="투표하기">
-				</div>
-			</form>
-
-<!-- 			<h1>옥외 광고</h1>
-			{% for ad in out_candidates %}
-				<div>
-					<head>{{ad.name}}</head>
-				</div>
-			{% endfor %}
-
-			<h1>브랜디드 엔터테인먼트</h1>
-			{% for ad in ent_candidates %}
-				<div>
-					<head>{{ad.name}}</head>
-				</div>
-			{% endfor %} -->
-		</table>
+			</div>
+		</form>
+		<script>
+		$("input:checkbox").click(function() {
+			var bol = $("input:checkbox:checked").length >= 3;     
+			$("input:checkbox").not(":checked").attr("disabled",bol);
+		});
+		</script>
 	</body>
 </html>
