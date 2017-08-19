@@ -198,3 +198,208 @@ ImportError: Couldn't import Django. Are you sure it's installed and available o
 [11/Aug/2017 09:41:53] "GET / HTTP/1.1" 200 855
 [11/Aug/2017 09:41:54] "GET / HTTP/1.1" 200 855
 [11/Aug/2017 09:41:56] "GET /video/ HTTP/1.1" 200 6086
+[18/Aug/2017 19:27:11] "GET /video/ HTTP/1.1" 200 6948
+[18/Aug/2017 19:29:02] "GET /video/ HTTP/1.1" 200 6959
+[18/Aug/2017 19:29:34] "GET / HTTP/1.1" 200 742
+[18/Aug/2017 19:29:34] "GET /static/indexlogo.png HTTP/1.1" 200 145496
+Not Found: /favicon.ico
+[18/Aug/2017 19:29:35] "GET /favicon.ico HTTP/1.1" 404 2915
+[18/Aug/2017 19:29:36] "GET /video? HTTP/1.1" 301 0
+[18/Aug/2017 19:29:36] "GET /video/ HTTP/1.1" 200 6959
+[18/Aug/2017 19:32:23] "GET /video/ HTTP/1.1" 200 6957
+[18/Aug/2017 19:32:30] "GET /video/ HTTP/1.1" 200 6957
+[18/Aug/2017 19:33:41] "GET /video/ HTTP/1.1" 200 6959
+[18/Aug/2017 19:33:48] "GET /video/ HTTP/1.1" 200 6959
+[18/Aug/2017 19:34:42] "GET /video/ HTTP/1.1" 200 6959
+[18/Aug/2017 19:35:36] "GET /video/ HTTP/1.1" 200 6959
+[18/Aug/2017 19:36:20] "GET /video/ HTTP/1.1" 200 6959
+[18/Aug/2017 19:40:12] "GET /video/ HTTP/1.1" 200 6960
+[18/Aug/2017 19:41:24] "GET /video/ HTTP/1.1" 200 6958
+[18/Aug/2017 19:44:07] "GET /video/ HTTP/1.1" 200 7058
+[18/Aug/2017 19:47:26] "GET /video/ HTTP/1.1" 200 7060
+[18/Aug/2017 19:48:29] "GET /video/ HTTP/1.1" 200 7059
+[18/Aug/2017 19:50:06] "GET /video/ HTTP/1.1" 200 7059
+[18/Aug/2017 19:51:08] "GET /video/ HTTP/1.1" 200 7061
+[18/Aug/2017 19:51:55] "GET /video/ HTTP/1.1" 200 7061
+[18/Aug/2017 19:52:44] "GET /video/ HTTP/1.1" 200 7060
+[18/Aug/2017 19:54:39] "GET /video/ HTTP/1.1" 200 7210
+[18/Aug/2017 19:57:22] "GET /video/ HTTP/1.1" 200 6179
+[18/Aug/2017 19:57:54] "GET /admin HTTP/1.1" 301 0
+[18/Aug/2017 19:57:55] "GET /admin/ HTTP/1.1" 200 7223
+[18/Aug/2017 19:57:56] "GET /static/admin/css/base.css HTTP/1.1" 200 16066
+[18/Aug/2017 19:57:56] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 412
+[18/Aug/2017 19:57:56] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[18/Aug/2017 19:57:57] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[18/Aug/2017 19:57:57] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[18/Aug/2017 19:57:57] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[18/Aug/2017 19:57:57] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+[18/Aug/2017 19:57:57] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[18/Aug/2017 19:57:58] "GET /admin/vote/ad_video/ HTTP/1.1" 200 6325
+[18/Aug/2017 19:57:59] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6170
+[18/Aug/2017 19:57:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[18/Aug/2017 19:57:59] "GET /static/admin/js/core.js HTTP/1.1" 200 7976
+[18/Aug/2017 19:57:59] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 363
+[18/Aug/2017 19:57:59] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 6591
+[18/Aug/2017 19:57:59] "GET /static/admin/js/actions.js HTTP/1.1" 200 6501
+[18/Aug/2017 19:57:59] "GET /static/admin/js/urlify.js HTTP/1.1" 200 8186
+[18/Aug/2017 19:57:59] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 258648
+[18/Aug/2017 19:57:59] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1538
+[18/Aug/2017 19:57:59] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 128820
+[18/Aug/2017 19:58:00] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[18/Aug/2017 19:58:01] "GET /admin/vote/ad_video/1/change/ HTTP/1.1" 200 5580
+[18/Aug/2017 19:58:02] "GET /static/admin/css/forms.css HTTP/1.1" 200 8173
+[18/Aug/2017 19:58:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[18/Aug/2017 19:58:02] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[18/Aug/2017 19:58:02] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[18/Aug/2017 19:58:02] "GET /static/admin/css/widgets.css HTTP/1.1" 200 10340
+[18/Aug/2017 19:58:10] "POST /admin/vote/ad_video/1/change/ HTTP/1.1" 302 0
+[18/Aug/2017 19:58:10] "GET /admin/vote/ad_video/ HTTP/1.1" 200 6530
+[18/Aug/2017 19:58:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[18/Aug/2017 19:58:11] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[18/Aug/2017 19:58:22] "GET /admin/vote/ad_video/1/change/ HTTP/1.1" 200 5598
+[18/Aug/2017 19:58:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[18/Aug/2017 19:58:28] "POST /admin/vote/ad_video/1/change/ HTTP/1.1" 302 0
+[18/Aug/2017 19:58:29] "GET /admin/vote/ad_video/ HTTP/1.1" 200 6562
+[18/Aug/2017 19:58:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3189
+[18/Aug/2017 20:01:22] "GET / HTTP/1.1" 200 742
+[18/Aug/2017 20:01:24] "GET /video? HTTP/1.1" 301 0
+[18/Aug/2017 20:01:24] "GET /video/ HTTP/1.1" 200 6204
+[18/Aug/2017 20:03:51] "GET / HTTP/1.1" 200 777
+[18/Aug/2017 20:05:41] "GET / HTTP/1.1" 200 813
+[18/Aug/2017 20:05:56] "GET / HTTP/1.1" 200 813
+[18/Aug/2017 20:05:57] "GET /static/indexlogo.png HTTP/1.1" 200 145496
+Not Found: /favicon.ico
+[18/Aug/2017 20:05:58] "GET /favicon.ico HTTP/1.1" 404 2915
+[18/Aug/2017 20:05:59] "GET /video? HTTP/1.1" 301 0
+[18/Aug/2017 20:06:00] "GET /video/ HTTP/1.1" 200 6204
+[18/Aug/2017 20:24:58] "GET / HTTP/1.1" 200 813
+[18/Aug/2017 20:25:00] "GET /video/ HTTP/1.1" 200 6204
+[18/Aug/2017 20:25:08] "POST /video/ HTTP/1.1" 302 0
+[18/Aug/2017 20:25:09] "GET /outdoor HTTP/1.1" 301 0
+[18/Aug/2017 20:25:09] "GET /outdoor/ HTTP/1.1" 200 2077
+[18/Aug/2017 20:25:11] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:25:13] "GET /static/out_four.png HTTP/1.1" 200 1442199
+[18/Aug/2017 20:25:13] "GET /static/out_one.png HTTP/1.1" 200 2675588
+[18/Aug/2017 20:25:13] "GET /static/out_two.png HTTP/1.1" 200 1822445
+[18/Aug/2017 20:25:13] "GET /static/out_three.png HTTP/1.1" 200 1881866
+[18/Aug/2017 20:25:14] "GET /static/out_five.png HTTP/1.1" 200 2820037
+[18/Aug/2017 20:25:28] "GET / HTTP/1.1" 200 813
+Not Found: /favicon.ico
+[18/Aug/2017 20:25:29] "GET /favicon.ico HTTP/1.1" 404 2915
+[18/Aug/2017 20:25:30] "GET /video/ HTTP/1.1" 200 6204
+[18/Aug/2017 20:25:33] "POST /video/ HTTP/1.1" 302 0
+[18/Aug/2017 20:25:34] "GET /outdoor HTTP/1.1" 301 0
+[18/Aug/2017 20:25:34] "GET /outdoor/ HTTP/1.1" 200 2077
+[18/Aug/2017 20:25:36] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:25:37] "GET /static/out_two.png HTTP/1.1" 200 1822445
+[18/Aug/2017 20:25:37] "GET /static/out_four.png HTTP/1.1" 200 1442199
+[18/Aug/2017 20:25:38] "GET /static/out_five.png HTTP/1.1" 200 2820037
+[18/Aug/2017 20:25:38] "GET /static/out_one.png HTTP/1.1" 200 2675588
+[18/Aug/2017 20:28:05] "GET /video/ HTTP/1.1" 200 6204
+[18/Aug/2017 20:28:08] "POST /video/ HTTP/1.1" 302 0
+[18/Aug/2017 20:28:08] "GET /outdoor HTTP/1.1" 301 0
+[18/Aug/2017 20:28:09] "GET /outdoor/ HTTP/1.1" 200 2044
+[18/Aug/2017 20:28:10] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:28:17] "GET /static/out_three.png HTTP/1.1" 200 1881866
+[18/Aug/2017 20:28:18] "GET /static/out_one.png HTTP/1.1" 200 2675588
+[18/Aug/2017 20:28:18] "GET /static/out_five.png HTTP/1.1" 200 2820037
+[18/Aug/2017 20:29:32] "GET /outdoor/ HTTP/1.1" 200 2076
+[18/Aug/2017 20:29:32] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:29:37] "GET /video/ HTTP/1.1" 200 6204
+[18/Aug/2017 20:29:39] "POST /video/ HTTP/1.1" 302 0
+[18/Aug/2017 20:29:40] "GET /outdoor HTTP/1.1" 301 0
+[18/Aug/2017 20:29:41] "GET /outdoor/ HTTP/1.1" 200 2076
+[18/Aug/2017 20:29:42] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:29:46] "GET /static/out_one.png HTTP/1.1" 200 2675588
+[18/Aug/2017 20:31:35] "GET /outdoor/ HTTP/1.1" 200 2093
+[18/Aug/2017 20:31:35] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:31:55] "GET /outdoor/ HTTP/1.1" 200 2093
+[18/Aug/2017 20:31:55] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:31:56] "GET /static/indexlogo.png HTTP/1.1" 200 145496
+[18/Aug/2017 20:32:02] "GET /static/out_two.png HTTP/1.1" 200 1822445
+[18/Aug/2017 20:32:54] "GET /outdoor/ HTTP/1.1" 200 1927
+[18/Aug/2017 20:32:54] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:33:04] "GET /outdoor/ HTTP/1.1" 200 1927
+[18/Aug/2017 20:33:05] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:33:07] "GET /static/out_four.png HTTP/1.1" 200 1442199
+[18/Aug/2017 20:33:08] "GET /static/out_three.png HTTP/1.1" 200 1881866
+[18/Aug/2017 20:33:09] "GET /static/out_one.png HTTP/1.1" 200 2675588
+[18/Aug/2017 20:33:10] "GET /static/out_five.png HTTP/1.1" 200 2820037
+Not Found: /favicon.ico
+[18/Aug/2017 20:33:11] "GET /favicon.ico HTTP/1.1" 404 2915
+[18/Aug/2017 20:35:26] "GET /outdoor/ HTTP/1.1" 200 2056
+[18/Aug/2017 20:35:27] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:35:34] "GET /outdoor/ HTTP/1.1" 200 2056
+[18/Aug/2017 20:35:35] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:35:37] "GET /outdoor/ HTTP/1.1" 200 2056
+[18/Aug/2017 20:35:38] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:35:52] "GET /video/ HTTP/1.1" 200 6204
+[18/Aug/2017 20:35:58] "GET /outdoor/ HTTP/1.1" 200 2056
+[18/Aug/2017 20:35:59] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:39:00] "GET /outdoor/ HTTP/1.1" 200 2269
+[18/Aug/2017 20:39:00] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:39:23] "GET /video/ HTTP/1.1" 200 6204
+[18/Aug/2017 20:44:04] "GET /outdoor/ HTTP/1.1" 200 2357
+[18/Aug/2017 20:44:05] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:44:28] "POST /outdoor/ HTTP/1.1" 302 0
+[18/Aug/2017 20:44:29] "GET /entertainment HTTP/1.1" 301 0
+[18/Aug/2017 20:44:29] "GET /entertainment/ HTTP/1.1" 200 2202
+[18/Aug/2017 20:44:29] "GET /static/entertainment.png HTTP/1.1" 404 1806
+[18/Aug/2017 20:44:31] "GET /static/ent_one.png HTTP/1.1" 200 1202996
+[18/Aug/2017 20:44:31] "GET /static/ent_five.png HTTP/1.1" 200 1124239
+[18/Aug/2017 20:44:31] "GET /static/ent_four.png HTTP/1.1" 200 1376280
+[18/Aug/2017 20:44:32] "GET /static/ent_three.png HTTP/1.1" 200 1930121
+[18/Aug/2017 20:44:33] "GET /static/ent_two.png HTTP/1.1" 200 2957555
+[18/Aug/2017 20:45:01] "GET /entertainment/ HTTP/1.1" 200 2202
+[18/Aug/2017 20:45:01] "GET /outdoor/ HTTP/1.1" 200 2357
+[18/Aug/2017 20:45:02] "GET /static/outdoor.png HTTP/1.1" 404 1788
+[18/Aug/2017 20:46:18] "GET / HTTP/1.1" 200 813
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/ubuntu/.local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 140, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/ubuntu/.local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 140, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/ubuntu/.local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 140, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/home/ubuntu/.local/lib/python3.5/site-packages/django/core/servers/basehttp.py", line 140, in handle
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[18/Aug/2017 21:30:40] "GET /video/ HTTP/1.1" 200 6204
