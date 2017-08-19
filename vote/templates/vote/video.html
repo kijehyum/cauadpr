@@ -46,6 +46,7 @@
 
 	<body style="background-color: #ffbf00;">
     <img class="wrapper" src= "{% static 'indexlogo.png' %}">
+    <img class="wrapper" src= "{% static 'video.png' %}">
 	<h1> {{ title }}</h1>
 		<form action="/video/" method="POST">
 			{% csrf_token %}
@@ -67,7 +68,7 @@
 			</div>
 			{% endfor %}
 			<div class="button">
-				<input type="image" src="{% static 'button.png' %}" alt="Submit" />
+				<input type="image" src="{% static 'button.png' %}" alt="Submit">
 			</div>
 		</form>
 		<script>
