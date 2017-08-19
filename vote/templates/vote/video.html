@@ -47,7 +47,11 @@
 	<body style="background-color: #ffbf00;">
     <img class="wrapper" src= "{% static 'indexlogo.png' %}">
     <img class="wrapper" src= "{% static 'video.png' %}">
+<<<<<<< HEAD
     <h1> {{ title }}</h1>
+=======
+	<h1> {{ title }}</h1>
+>>>>>>> cd3a8ded2b3e24f32d88516fff338708f3e9b439
 		<form action="/video/" method="POST">
 			{% csrf_token %}
 			{% for ad in vid_candidates %}
@@ -66,7 +70,11 @@
 			</div>
 			{% endfor %}
 			<div class="button">
+<<<<<<< HEAD
 				<input type="image" src="{% static 'button.png' %}" alt="Submit" >
+=======
+				<input type="image" src="{% static 'button.png' %}" alt="Submit">
+>>>>>>> cd3a8ded2b3e24f32d88516fff338708f3e9b439
 			</div>
 		</form>
 		<script>
