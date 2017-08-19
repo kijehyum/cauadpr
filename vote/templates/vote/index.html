@@ -14,20 +14,24 @@
 			.button {
 				text-align: center;
 			}
+			
+			.intro {
+				text-align: center;
+			}
 		</style>
 	</head>
 
 	<body style="background-color: #ffbf00;">
 		<img class="wrapper" src="{% static 'indexlogo.png' %}">
 
-		<div class="intro" style="background-color: #ffffff;">
+		<div class="intro">
 			<img src="{% static 'intro.png' %}">
 		</div>
 
 		<div class="button">
 		<table>
 			<form action="/video">
-				<input type="image" src="{% static 'button.png' %}" alt="Submit" />
+				<input type="image" src="{% static 'button.png' %}" alt="Submit">
 			</form>
 		</table>
 		</div>
