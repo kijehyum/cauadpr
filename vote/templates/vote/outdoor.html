@@ -7,13 +7,6 @@
 	<head>
 		<title>대학생이 뽑은 좋은 광고</title>
 		<meta charset="utf-8">
-<<<<<<< HEAD
-		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
-
-
-		<!-- <script type="text/javascript" src="../../../js/jquery.js"></script> -->
-=======
->>>>>>> 1184a00c2bc100fcfaf475f47d78337ef642e453
 		<style>
 			.wrapper {
 				width: 100%;
@@ -26,22 +19,12 @@
 
 			.candidates {
 				text-align: center;
-				background-color: #ffffff;
-<<<<<<< HEAD
-			    width: 700px;
+                /*background-color: #ffffff;*/
+                width: 700px;
                 height: auto;	
                 margin-top: 10px;
                 margin-left: auto;
                 margin-right: auto;
-				
-=======
-				width: 700px;
-				height: auto;
-				margin-top: 10px;
-				margin-left: auto;
-				margin-right: auto;
->>>>>>> 1184a00c2bc100fcfaf475f47d78337ef642e453
-				border: 1px black;
 			}
 		</style>
 
@@ -54,27 +37,7 @@
 			<img class="wrapper" src="{% static 'outdoor.png' %}">
 			<form action="/outdoor/" method="POST">
 			{% csrf_token %}
-			<div class="candidates">
-<<<<<<< HEAD
-				<img src="{% static 'out_one.png' %}" width="700px"  >
-			    <div>
-                    <input type="radio" name="out_id" value="1">선택하기</input>
-		        </div>	
-            </div>
-			
-			<div class="candidates">
-				<img src="{% static 'out_two.png' %}" width="700px">
-                <div>    
-                    <input type="radio" name="out_id" value="2">선택하기</input>
-                </div>
-            </div>
-		
-			<div class="candidates">
-				<img src="{% static 'out_three.png' %}" width="700px" >
-			    <div>
-                    <input type="radio" name="out_id" value="3">선택하기</input>
-                </div>
-=======
+    		<div class="candidates">
 				<img src="{% static 'baedaltong.png' %}" width="700px">
 				<div>
 					<input type="radio" name="out_id" value="1">선택하기</input>
@@ -93,38 +56,21 @@
 				<div>
 					<input type="radio" name="out_id" value="3">선택하기</input>
 				</div>
->>>>>>> 1184a00c2bc100fcfaf475f47d78337ef642e453
 			</div>
 			
 			<div class="candidates">
-<<<<<<< HEAD
-				<img src="{% static 'out_four.png' %}" width="700px" >
-			    <div>    
-                    <input type="radio" name="out_id" value="4">선택하기</input>
-                </div>
-=======
-				<img src="{% static 'heattech.png' %}" width="700px">
+            	<img src="{% static 'heattech.png' %}" width="700px">
 				<div>
 					<input type="radio" name="out_id" value="4">선택하기</input>
 				</div>
->>>>>>> 1184a00c2bc100fcfaf475f47d78337ef642e453
 			</div>
 
 			<div class="candidates">
-<<<<<<< HEAD
-				<img src="{% static 'out_five.png' %}" width="700px" >
-                <div>    
-                    <input type="radio" name="out_id" value="5">선택하기</input>
-                </div>
-			</div>
-=======
-				<img src="{% static 'pagoda.png' %}" width="700px">
+                <img src="{% static 'pagoda.png' %}" width="700px">
 				<div>
 					<input type="radio" name="out_id" value="5">선택하기</input>
 				</div>
 			</div>	
->>>>>>> 1184a00c2bc100fcfaf475f47d78337ef642e453
-
 			<div class="button">
 				<input type="submit" value="투표하기">
 			</div>

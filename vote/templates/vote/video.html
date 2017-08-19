@@ -39,18 +39,15 @@
 				padding-left: auto;
 				padding-right: auto;
 				width: 100%;
-<<<<<<< HEAD
-                height: 400px;
-=======
 				height: 400px;
->>>>>>> 1184a00c2bc100fcfaf475f47d78337ef642e453
 			}
 		</style>
 	</head>
 
 	<body style="background-color: #ffbf00;">
     <img class="wrapper" src= "{% static 'indexlogo.png' %}">
-	<h1> {{ title }}</h1>
+    <img class="wrapper" src= "{% static 'video.png' %}">
+    <h1> {{ title }}</h1>
 		<form action="/video/" method="POST">
 			{% csrf_token %}
 			{% for ad in vid_candidates %}
@@ -69,7 +66,7 @@
 			</div>
 			{% endfor %}
 			<div class="button">
-				<input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit" value="투표하기">
+				<input type="image" src="{% static 'button.png' %}" alt="Submit" >
 			</div>
 		</form>
 		<script>
