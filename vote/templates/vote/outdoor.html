@@ -15,7 +15,8 @@
 
 			.button {
 				margin-top: 30px;
-                text-align: center;
+				margin-bottom: 30px;
+               			text-align: center;
 			}
 
 			.candidates {
@@ -38,7 +39,7 @@
 			<img class="wrapper" src="{% static 'outdoor.png' %}">
 			<form action="/outdoor/" method="POST">
 			{% csrf_token %}
-    		<div class="candidates">
+    			<div class="candidates">
 				<img src="{% static 'baedaltong.png' %}" width="700px">
 				<div>
 					<input type="radio" name="out_id" value="1">선택하기</input>
@@ -60,14 +61,14 @@
 			</div>
 			
 			<div class="candidates">
-            	<img src="{% static 'heattech.png' %}" width="700px">
+            			<img src="{% static 'heattech.png' %}" width="700px">
 				<div>
 					<input type="radio" name="out_id" value="4">선택하기</input>
 				</div>
 			</div>
 
 			<div class="candidates">
-                <img src="{% static 'pagoda.png' %}" width="700px">
+              			<img src="{% static 'pagoda.png' %}" width="700px">
 				<div>
 					<input type="radio" name="out_id" value="5">선택하기</input>
 				</div>
