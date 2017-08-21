@@ -19,21 +19,24 @@
 				width: 100%;
 				height: auto;
 			}
-            .head {
-                display: inline;
-                background-color: white;
-                font-size: 200%;
-                padding-bottom: 5px;
-                padding-up: 5px;
-                font-family: 'Jeju Gothic', sans-serif;
-            }
+			
+		        .head {
+				display: inline;
+				background-color: white;
+				font-size: 200%;
+				padding-bottom: 5px;
+				padding-up: 5px;
+				font-family: 'Jeju Gothic', sans-serif;
+		        }
+			
 			.button {
 				text-align: center;
+				margin-bottom: 30px;
 			}
 
 			.candidates {
 				text-align: center;
-                background-color: #ffffff;				
+              			background-color: #ffffff;				
 				margin-top: 10px;
 				margin-bottom: 30px;
 				margin-left: 100px;
@@ -42,8 +45,7 @@
 			}
 
 			.video {
-                border: 2px #000000;
-				
+                		border: 2px #000000;
 				width: 100%;
 				height: 400px;
 			}
@@ -67,7 +69,8 @@
 					</iframe>
 				</div>
 				<div class="button">
-                    <input id="checkbox-{{ ad.id }}" class="mdl-checkbox__input" type="checkbox" name="vid_id" value="{{ ad.id }}" width="100px">선택하기</input>
+					<input type="radio" id="radio" name="vid_id" value="{{ ad.id }}">선택하기</input>
+					<!--<input id="checkbox-{{ ad.id }}" class="mdl-checkbox__input" type="checkbox" name="vid_id" value="{{ ad.id }}" width="100px">선택하기</input>-->
 				</div>
 			</div>
 			{% endfor %}
@@ -75,11 +78,11 @@
 				<input type="image" src="{% static 'button.png' %}" alt="Submit">
 			</div>
 		</form>
-		<script>
+		<!--<script>
 		$("input:checkbox").click(function() {
 			var bol = $("input:checkbox:checked").length >= 3;     
 			$("input:checkbox").not(":checked").attr("disabled",bol);
 		});
-		</script>
+		</script>-->
 	</body>
 </html>
